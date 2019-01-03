@@ -1,0 +1,23 @@
+---
+driver:
+  name: ec2
+  subnet_id: <%= ENV['KITCHEN_EC2_SUBNET_ID'] %>
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-18.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[cookbook_wkhtmltopdf::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:

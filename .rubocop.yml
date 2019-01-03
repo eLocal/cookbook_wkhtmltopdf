@@ -1,0 +1,32 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'tmp/**/*'
+  DisplayCopNames: true
+LineLength:
+  Enabled: true
+  Max: 150
+Documentation:
+  Enabled: false
+AlignParameters:
+  Enabled: false
+MethodLength:
+  Max: 30
+AndOr:
+  Enabled: false
+ClassLength:
+  Max: 200
+ClassAndModuleChildren:
+  Enabled: false
+MultilineOperationIndentation:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 20
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'
+    '%i': '()'
+    '%I': '()'
