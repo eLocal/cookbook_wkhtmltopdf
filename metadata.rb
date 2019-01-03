@@ -12,7 +12,7 @@ long_description <<~TXT
 TXT
 
 version '0.1.0'
-chef_version '>= 13.0'
+chef_version '>= 12.0'
 
 source_url 'https://github.com/eLocal/cookbook_wkhtmltopdf'
 issues_url 'https://github.com/eLocal/cookbook_wkhtmltopdf/issues'
