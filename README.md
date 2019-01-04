@@ -1,4 +1,4 @@
-# cookbook_wkhtmltopdf
+# wkhtmltopdf
 
 ## About
 
@@ -13,7 +13,7 @@ Some examples of the problems that we are solving with the repository
 ## Usage
 
 ```
-include_recipe cookbook_wkhtmltopdf::default
+include_recipe wkhtmltopdf::default
 ```
 
 ## Development
