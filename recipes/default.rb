@@ -49,5 +49,5 @@ file '/usr/local/bin/wkhtmltopdf-with-xvfb' do
   owner 'root'
   group 'root'
   mode 0o755
-  content %(xvfb-run --server-args="#{node['wkhtmltopdf']['xvfb']['server-args']}" /usr/bin/wkhtmltopdf $*)
+  content %(xvfb-run --auto-servernum --server-args="#{node['wkhtmltopdf']['xvfb']['server-args']}" /usr/bin/wkhtmltopdf $*)
 end

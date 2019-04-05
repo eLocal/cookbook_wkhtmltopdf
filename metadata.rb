@@ -11,7 +11,7 @@ long_description <<~TXT
   has libpng installed correctly.
 TXT
 
-version '0.2.0'
+version '0.3.0'
 chef_version '>= 12.0'
 
 source_url 'https://github.com/eLocal/cookbook_wkhtmltopdf'
